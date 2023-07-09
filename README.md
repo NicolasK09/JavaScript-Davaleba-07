@@ -1,1 +1,1 @@
-# JavaScript-Davaleba-07
+# JavaScript-07-Homework

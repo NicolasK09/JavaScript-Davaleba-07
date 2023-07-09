@@ -1,0 +1,102 @@
+.burger-container {
+    position: relative;
+  }
+  
+  .burger-icon {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .burger-icon1 {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .burger-icon2{
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .burger-menu {
+    display: none;
+    position: absolute;
+    margin-top: 275px;
+    margin-right: 500px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+  }
+  
+  .burger-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .burger-menu li {
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  /* ანიმაცია */
+  .burger-icon.active {
+    transform: rotate(45deg);
+  }
+  
+  .burger-menu.show {
+    display: block;
+    animation: slideIn 0.3s ease forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  body{
+    background-color: aqua;
+  }
+  .accordion {
+    border: 1px solid #ccc;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .accordion-header {
+    background-color: #f5f5f5;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 10px;
+  }
+  
+  .accordion-content p {
+    margin: 0;
+  }
+  
+  .accordion-item.active .accordion-content {
+    display: block;
+    background-color: bisque;
+  }
+  
